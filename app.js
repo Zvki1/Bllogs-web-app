@@ -5,10 +5,8 @@ const Blog=require('./models/blog.js')
 const blogRoutes=require('./routes/blogRoutes')
 //creating an express app
 const app=express()
-// connect to mongodb
-// mongodb+srv://Zvki1:Zvki1@nodetuts.wtmle1g.mongodb.net/
-// const dbURI="mongodb+srv://Zvki1:Zvki1@nodetuts.wtmle1g.mongodb.net/"
-const dbURI="mongodb+srv://Zvki1:Zvki1@nodetuts.wtmle1g.mongodb.net/?retryWrites=true&w=majority"
+
+const dbURI="mdp"
 mongoose.connect(dbURI,{useNewUrlParser:true,useUnifiedTopology:true})
     .then((result)=>{console.log('connected to mdb')
         app.listen(3000)})
